@@ -1,10 +1,8 @@
 # Tiered Language Models (TLMs)
 
-Reference implementation for "Toward Open Weight Models Without Risks: Separating Public and Private Capabilities in LLMs" (NeurIPS 2026 submission, anonymous).
+Reference implementation for "Toward Open Weight Models Without Risks: Separating Public and Private Capabilities in LLMs".
 
 A TLM is a single set of weights that supports two (or more) computation graphs over the same parameters. A compact secret key specifies a permutation over a small parameter subset (about 5% of total parameters): without the key the model runs in its public configuration, and with the key it runs in a keyed configuration that exposes additional capabilities. Public and keyed models share the same parameter values and differ only in how those values are arranged within the weight tensors.
-
-> **Note for reviewers.** This repository is double-blind anonymized. No author names, affiliations, or institutional URLs appear in the code or commit history.
 
 ## Install
 
